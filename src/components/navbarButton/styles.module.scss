@@ -1,0 +1,23 @@
+@import "../../sass/variables.scss";
+
+.button {
+  display: flex;
+  min-width: 100px;
+  min-height: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: $baaxal-black;
+  color: white !important;
+}
+
+.button a {
+  color: $baaxal-black;
+  text-decoration: none;
+}
+
+.button:hover a {
+  color: white !important;
+}
