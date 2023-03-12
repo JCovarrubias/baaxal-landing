@@ -9,6 +9,7 @@
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   max-width: 256px;
+  height: 295px;
   padding: 32px 0;
 }
 
@@ -32,4 +33,10 @@
   height: 48px;
   font-size: 20px;
   color: $baaxal-black
+}
+
+@media (max-width: 912px) {
+  .card {
+    margin: 12px auto;
+  }
 }

@@ -16,11 +16,11 @@ const AboutUsSection = () => {
   return (
     <div id="aboutUs" className={styles.container}>
       <h1 className={styles.title}>SOLUCIONES</h1>
-      <Container>
+      <div className={styles.cardsContainer}>
         {
           cards.map((data, index) => <AboutUsCard image={data.img} description={data.description} key={index} />)
         }
-      </Container>
+      </div>
     </div>
   )
 }

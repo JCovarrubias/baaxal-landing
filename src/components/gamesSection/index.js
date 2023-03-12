@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState, useEffect } from 'react';
 import * as styles from "./styles.module.scss"
 import '../../sass/basics.scss'
 import 'swiper/css';
@@ -16,6 +16,21 @@ const GamesSection = () => {
     { name: 'Shake Soda', img: require("../../images/shakeSodaCard.png").default },
   ]
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    // Limpia el efecto cuando el componente se desmonta
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  let direction = windowWidth > 912 ? "horizontal" : "vertical"
+
   return (
     <div className={styles.container}>
       <div id="games" className={styles.swiper}>
@@ -25,7 +40,8 @@ const GamesSection = () => {
             clickable: false,
           }}
           modules={[Pagination]}
-
+          direction={direction}
+          className={styles.swiper}
         >
           {
             games.map((game, index) => (

@@ -9,7 +9,7 @@ const NavbarButton = ({ text, linkTo }) => {
     <Link
       to={linkTo}
     >
-      { text }
+      <p>{ text }</p>
     </Link>
   </div>
   )

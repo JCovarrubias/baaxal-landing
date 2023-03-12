@@ -9,8 +9,8 @@ const Navbar = () => {
   const buttons = [
     { name: 'HOME', linkTo: '#home' },
     { name: 'GAMES', linkTo: '#games' },
-    { name: 'ABOUT US', linkTo: '#aboutUs' },
-    { name: 'MEET THE TEAM', linkTo: '#team' },
+    { name: 'SOLUCIONES', linkTo: '#aboutUs' },
+    { name: 'EL EQUIPO', linkTo: '#team' },
   ]
 
   return (

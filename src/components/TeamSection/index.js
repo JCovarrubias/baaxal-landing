@@ -6,11 +6,10 @@ import Container from "../container"
 
 const TeamSection = () => {
   return (
-    <Container>
+    <Container id="team">
     <div className={styles.section}>
       <div className={styles.details}>
-        <h1 className={styles.title}>CONOCER AL EQUIPO</h1>
-        <h4 className={styles.subtitle}>SOMOS PROFESIONALES CREATIVOS</h4>
+        <h1 className={styles.title}>CONOCE AL EQUIPO</h1>
         <p className={styles.desc}>
         Somos una empresa de videojuegos con sede en la Ciudad de México y oficina en San Luis Potosí. Aunque nuestra presencia en el mercado inició a finales de 2022, nuestra trayectoria como desarrolladores de juegos para dispositivos móviles se remonta a varios años atrás.<br/><br/>
         Nuestro propósito es crear grandes juegos que brinden a las personas experiencias memorables y gratificantes en su día a día. Creemos en el poder de los videojuegos para unir a personas de todo el mundo, y trabajamos con pasión para diseñar experiencias que emocionen y diviertan a los jugadores.<br/><br/>

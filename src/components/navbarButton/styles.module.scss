@@ -2,7 +2,8 @@
 
 .button {
   display: flex;
-  min-width: 100px;
+  min-width: 64px;
+  max-width: 96px;
   min-height: 64px;
   justify-content: center;
   align-items: center;
