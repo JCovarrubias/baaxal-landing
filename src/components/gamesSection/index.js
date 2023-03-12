@@ -19,13 +19,9 @@ const GamesSection = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-
+    setWindowWidth(window.innerWidth);
+    const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
-
-    // Limpia el efecto cuando el componente se desmonta
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
