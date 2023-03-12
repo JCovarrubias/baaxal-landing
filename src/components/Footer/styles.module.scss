@@ -12,5 +12,17 @@
   text-align: center;
   color: $baaxal-black;
   margin-top: 0;
-  padding-bottom: 32px;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+.socialMedia {
+  max-width: 20%;
+  margin: auto;
+}
+
+.img {
+  display: block;
+  max-height: 52px;
 }

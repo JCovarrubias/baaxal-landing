@@ -9,15 +9,14 @@ const TeamSection = () => {
     <Container>
     <div className={styles.section}>
       <div className={styles.details}>
-        <h1 className={styles.title}>MEET THE TEAM</h1>
-        <h4 className={styles.subtitle}>WE ARE CREATIVE PROFESSIONALS</h4>
+        <h1 className={styles.title}>CONOCER AL EQUIPO</h1>
+        <h4 className={styles.subtitle}>SOMOS PROFESIONALES CREATIVOS</h4>
         <p className={styles.desc}>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
-          at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        Somos una empresa de videojuegos con sede en la Ciudad de México y oficina en San Luis Potosí. Aunque nuestra presencia en el mercado inició a finales de 2022, nuestra trayectoria como desarrolladores de juegos para dispositivos móviles se remonta a varios años atrás.<br/><br/>
+        Nuestro propósito es crear grandes juegos que brinden a las personas experiencias memorables y gratificantes en su día a día. Creemos en el poder de los videojuegos para unir a personas de todo el mundo, y trabajamos con pasión para diseñar experiencias que emocionen y diviertan a los jugadores.<br/><br/>
+        Valoramos la gamificación como una herramienta poderosa para involucrar a los usuarios en el logro de metas y objetivos. Nos gusta colaborar con empresas que buscan integrar los videojuegos en sus estrategias de negocio, y ofrecemos soluciones de gamificación personalizadas que potencian el engagement y la satisfacción de los usuarios.<br/><br/>
+        En resumen, somos un estudio de videojuegos comprometido con la excelencia y la innovación en la creación de juegos que conecten con el público y ofrezcan experiencias únicas e inolvidables.
         </p>
-        <button className={styles.button}>VIEW MORE</button>
       </div>
       <div>
         <img className={styles.img} src={require("../../images/team.png").default} alt=""/>

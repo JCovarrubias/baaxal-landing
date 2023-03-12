@@ -2,4 +2,10 @@
   height: 256px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(325.03deg, #1A1A1A 13.84%, #333333 114.36%);
   padding: 32px 0;
+  max-width: 100%;
+}
+
+.swiper {
+  width: 1000px;
+  margin: 0 auto;
 }
