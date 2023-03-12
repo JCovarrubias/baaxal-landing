@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import * as React from 'react';
 import * as styles from "./styles.module.scss"
 import '../../sass/basics.scss'
 import 'swiper/css';
@@ -7,25 +7,21 @@ import "swiper/css/pagination";
 import GameCard from "../gameCard"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import * as useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const GamesSection = () => {
+  console.log(useWindowDimensions)
+  const { width } = useWindowDimensions.default();
   const games = [
     { name: 'Driver Truck', img: require("../../images/driverTruckCard.png").default },
     { name: 'Moto Circle', img: require("../../images/motoCircleCard.png").default },
     { name: 'Almacen Runner', img: require("../../images/almacenRunnerCard.png").default },
     { name: 'Shake Soda', img: require("../../images/shakeSodaCard.png").default },
   ]
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  let direction = windowWidth > 912 ? "horizontal" : "vertical"
+  // let direction = "horizontal"
+  let direction = width > 912 || width == undefined ? "horizontal" : "vertical"
+  console.log(width)
+  console.log(direction)
 
   return (
     <div className={styles.container}>

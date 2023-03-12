@@ -1,6 +1,7 @@
 .card {
   display: flex;
   justify-content: center;
+  max-height: 100%;
 }
 
 .img {
@@ -11,6 +12,5 @@
 
 @media (max-width: 912px) {
   .img {
-    max-height: 200px;
   }
 }
