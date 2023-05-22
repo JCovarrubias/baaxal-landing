@@ -10,7 +10,6 @@ import { Pagination } from "swiper";
 import * as useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const GamesSection = () => {
-  console.log(useWindowDimensions)
   const { width } = useWindowDimensions.default();
   const games = [
     { name: 'Driver Truck', img: require("../../images/driverTruckCard.png").default },
@@ -19,9 +18,7 @@ const GamesSection = () => {
     { name: 'Shake Soda', img: require("../../images/shakeSodaCard.png").default },
   ]
   // let direction = "horizontal"
-  let direction = width > 912 || width == undefined ? "horizontal" : "vertical"
-  console.log(width)
-  console.log(direction)
+  let direction = width > 912 || width === undefined ? "horizontal" : "vertical"
 
   return (
     <div className={styles.container}>
@@ -37,7 +34,7 @@ const GamesSection = () => {
         >
           {
             games.map((game, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide customStyles={styles.swiper} key={index}>
                 <GameCard gameImage={game.img} key={index}/>
               </SwiperSlide>
             ))

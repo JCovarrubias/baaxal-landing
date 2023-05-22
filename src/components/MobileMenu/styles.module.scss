@@ -1,0 +1,50 @@
+@import "../../sass/variables.scss";
+
+.mobile_menu {
+  justify-content: start;
+  position: relative;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.menu_toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-color: $baaxal-black;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.bar {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 6px;
+  align-self: flex-start;
+}
+
+.menu_items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $baaxal-black;
+  padding: 10px;
+  list-style: none;
+}
+
+.menu_items li {
+  margin-bottom: 10px;
+}
+
+.menu_items a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import * as styles from "./styles.module.scss"
 import '../../sass/basics.scss'
 
@@ -12,7 +13,7 @@ const Footer = () => {
 
   return (
     <div id="footer" className={styles.container}>
-      <p className={styles.title}>Politicas de Privacidad</p>
+      <Link to="/privacyPolicy" className={styles.link}><p className={styles.title}>Politicas de Privacidad</p></Link>
       <div className={styles.socialMedia}>
         <Container>
           {

@@ -2,7 +2,6 @@ import * as React from "react"
 import * as styles from "./styles.module.scss"
 import '../../sass/basics.scss'
 
-import Container from "../container"
 import AboutUsCard from "../AboutUsCard"
 
 const AboutUsSection = () => {

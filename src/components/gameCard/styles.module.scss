@@ -7,10 +7,5 @@
 .img {
   display: block;
   max-height: 256px;
-  margin: 0;
-}
-
-@media (max-width: 912px) {
-  .img {
-  }
+  max-width: 100%;
 }

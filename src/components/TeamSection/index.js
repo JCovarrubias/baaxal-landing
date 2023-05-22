@@ -6,8 +6,8 @@ import Container from "../container"
 
 const TeamSection = () => {
   return (
-    <Container id="team">
-    <div className={styles.section}>
+    <Container>
+    <div className={styles.section} id="team">
       <div className={styles.details}>
         <h1 className={styles.title}>CONOCE AL EQUIPO</h1>
         <p className={styles.desc}>

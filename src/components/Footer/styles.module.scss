@@ -26,3 +26,21 @@
   display: block;
   max-height: 52px;
 }
+
+.link {
+  text-decoration: none;
+}
+
+@media (max-width: 912px) {
+  .socialMedia {
+    max-width: 30%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 512px) {
+  .socialMedia {
+    max-width: 50%;
+    margin: auto;
+  }
+}

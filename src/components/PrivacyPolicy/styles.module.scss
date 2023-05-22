@@ -1,0 +1,28 @@
+@import "../../sass/variables.scss";
+
+.privacy_policy_container {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: groove;
+  border-radius: 10px;
+  border-color: rgb(18, 18, 18, 0.7);
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.privacy_policy_container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.privacy_policy_container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.privacy_policy_container li {
+  list-style: none;
+  padding-left: 30px;
+}
