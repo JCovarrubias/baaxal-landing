@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     <div className={styles.privacy_policy_container}>
       <h1><strong>AVISO DE PRIVACIDAD</strong></h1>
       <p>
-        A los <strong>Usuario</strong>s (como se definen posteriormente), les informamos que el siguiente <strong>Aviso de Privacidad</strong>, les es aplicable por el simple uso o acceso a cualquiera de las páginas, aplicaciones web y móviles, softwares y, aplicaciones en general, que integran el <strong>Portal</strong> de www.baaxalgames.com (en adelante y, conjunta e indistintamente, el "<strong>Portal</strong>"), por lo que entenderemos que lo acepta y acuerda en obligarse en su cumplimiento. <strong>En caso de que no esté de acuerdo con el <strong>Aviso de Privacidad</strong> y/o con los Términos y Condiciones a su disposición, deberá abstenerse de acceder o utilizar el <strong>Portal</strong>.</strong>
+        A los <strong>Usuarios</strong> (como se definen posteriormente), les informamos que el siguiente <strong>Aviso de Privacidad</strong>, les es aplicable por el simple uso o acceso a cualquiera de las páginas, aplicaciones web y móviles, softwares y, aplicaciones en general, que integran el <strong>Portal</strong> de www.baaxalgames.com (en adelante y, conjunta e indistintamente, el "<strong>Portal</strong>"), por lo que entenderemos que lo acepta y acuerda en obligarse en su cumplimiento. <strong>En caso de que no esté de acuerdo con el <strong>Aviso de Privacidad</strong> y/o con los Términos y Condiciones a su disposición, deberá abstenerse de acceder o utilizar el <strong>Portal</strong>.</strong>
       </p>
       <p>
         El <strong>Usuario</strong>, entendido como aquella persona que realiza el uso o accede, mediante equipo de cómputo y/o cualquier equipo de comunicación o dispositivo, al <strong>Portal</strong> (en adelante el <strong>“<strong>Usuario</strong>”</strong>), acepta plena y sin reserva todas y cada una de las disposiciones incluidas en el presente <strong>Aviso de Privacidad</strong>. 
@@ -23,14 +23,14 @@ const PrivacyPolicy = () => {
       <p>
         <strong>DATOS PERSONALES QUE PUEDEN SER RECOLECTADOS</strong>. Los datos personales que la <strong>Empresa</strong> puede recopilar del <strong>Usuario</strong> al utilizar el <strong>Portal</strong> y/o contratar nuestros servicios y productos, son los siguientes: 
       </p>
-          <li>I. Correo electrónico;</li>
-          <li>II. Contraseña; </li>
-          <li>III. Cantidad de visitas a la app; </li>
-          <li>IV. Cantidad de tiempo jugando por sesión;</li> 
-          <li>V. Cantidad de sesiones jugadas; </li>
+          <li>I. Correo electrónico</li>
+          <li>II. Contraseña</li>
+          <li>III. Cantidad de visitas a la app</li>
+          <li>IV. Cantidad de tiempo jugando por sesión</li> 
+          <li>V. Cantidad de sesiones jugadas</li>
       <p>
         FINALIDADES DEL TRATAMIENTO DE SUS DATOS PERSONALES. Los datos personales que la <strong>Empresa</strong> recabe serán utilizados para atender las siguientes finalidades: 
-        </p>
+      </p>
       <p>
         <li>I. Para la creación de cuenta, Que el <strong>Usuario</strong> pueda acceder a nuestros servicios y contenido;</li>
         <li>II. Llevar el progreso del <strong>Usuario</strong> en el <strong>Portal</strong> en, de manera enunciativa mas no limitativa, vidas, monedas obtenidas dentro del juego, monedas compradas por medio de micro transacción, productos comprados, puntajes para llevar un tablero de clasificación; </li>
