@@ -12,10 +12,9 @@ import * as useWindowDimensions from '../../hooks/useWindowDimensions';
 const GamesSection = () => {
   const { width } = useWindowDimensions.default();
   const games = [
-    { name: 'Driver Truck', img: require("../../images/driverTruckCard.png").default },
-    { name: 'Moto Circle', img: require("../../images/motoCircleCard.png").default },
-    { name: 'Almacen Runner', img: require("../../images/almacenRunnerCard.png").default },
-    { name: 'Shake Soda', img: require("../../images/shakeSodaCard.png").default },
+    { name: 'Tino Run', img: require("../../images/tino_banner.png").default },
+    { name: 'Soup', img: require("../../images/soup_banner.png").default },
+    { name: 'Playful', img: require("../../images/playful_banner.png").default },
   ]
   // let direction = "horizontal"
   let direction = width > 912 || width === undefined ? "horizontal" : "vertical"
