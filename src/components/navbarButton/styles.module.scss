@@ -2,23 +2,19 @@
 
 .button {
   display: flex;
-  min-width: 64px;
-  max-width: 96px;
-  min-height: 64px;
-  justify-content: center;
   align-items: center;
+  margin-left: 20px;
 }
 
-.button:hover {
-  background-color: $baaxal-black;
-  color: white !important;
-}
+// .button:hover {
+//   color: $baaxal-black !important;
+// }
 
 .button a {
-  color: $baaxal-black;
+  color: white;
   text-decoration: none;
 }
 
 .button:hover a {
-  color: white !important;
+  color: $baaxal-yellow !important;
 }

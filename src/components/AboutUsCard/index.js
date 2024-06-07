@@ -7,7 +7,6 @@ const AboutUsCard = ({image, description}) => {
     <div className={styles.card}>
       <img className={styles.img} src={image} alt=""/>
       <p className={styles.desc}>{ description }</p>
-      {/* <button className={styles.button}></button> */}
     </div>
   )
 }

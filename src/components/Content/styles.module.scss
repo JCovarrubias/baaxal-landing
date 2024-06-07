@@ -1,4 +1,7 @@
+@import "../../sass/variables.scss";
+
 .content {
+  background-color: $baaxal-black;
   position: relative;
   width: 100%;
   z-index: 2;

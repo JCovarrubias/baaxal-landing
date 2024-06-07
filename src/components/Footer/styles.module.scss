@@ -1,16 +1,17 @@
 @import "../../sass/variables.scss";
 
 .container {
+  background-color: black;
   padding-left: 5%;
   padding-right: 5%;
   padding: 32px 0 64px 0;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .title {
   text-align: center;
-  color: $baaxal-black;
+  color: white;
   margin-top: 0;
   font-size: 22px;
   font-weight: bold;

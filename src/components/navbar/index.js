@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react"
 import * as styles from "./styles.module.scss"
 import '../../sass/basics.scss'
+import logo from '../../images/baaxalVerticalLogo.png'
 
-import Container from "../container"
+import NavbarContainer from "../NavbarContainer"
 import NavbarButton from "../navbarButton"
 import MobileMenu from "../MobileMenu"
 
@@ -24,23 +25,24 @@ const Navbar = () => {
   }, []);
 
   const buttons = [
-    { name: 'HOME', linkTo: '#home' },
-    { name: 'GAMES', linkTo: '#games' },
-    { name: 'SOLUCIONES', linkTo: '#aboutUs' },
-    { name: 'EL EQUIPO', linkTo: '#team' },
+    { name: 'HOME', linkTo: '/' },
+    { name: 'ABOUT US', linkTo: '/about-us' },
   ]
 
   return (
-    <>
-      {isMobile && <MobileMenu buttons={ buttons }/> }
-      <div className={styles.navbar}>
-        <Container>
+    <div className={styles.navbar}>
+      <NavbarContainer>
+        <div className={styles.logo}>
+          <img src={logo} alt="Logo" />
+        </div>
+        <div className={styles.buttonsAlignment}>
+          {isMobile && <MobileMenu buttons={ buttons }/> }
           {
             !isMobile && buttons.map((data, index) => <NavbarButton text={data.name} linkTo={data.linkTo} key={index} />)
           }
-        </Container>
-      </div>
-    </>
+        </div>
+      </NavbarContainer>
+    </div>
   )
 }
 

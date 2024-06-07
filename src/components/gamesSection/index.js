@@ -1,12 +1,8 @@
 import * as React from 'react';
 import * as styles from "./styles.module.scss"
 import '../../sass/basics.scss'
-import 'swiper/css';
-import "swiper/css/pagination";
 
 import GameCard from "../gameCard"
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
 import * as useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const GamesSection = () => {
@@ -20,24 +16,13 @@ const GamesSection = () => {
 
   return (
     <div className={styles.container}>
-      <div id="games" className={styles.swiper}>
-        <Swiper
-          slidesPerView={2}
-          pagination={{
-            clickable: false,
-          }}
-          modules={[Pagination]}
-          direction={direction}
-          className={styles.swiper}
-        >
+      <h1 className={styles.title}>NUESTROS <b className={styles.highlight}>JUEGOS</b></h1>
+      <div id="games" className={styles.gamesGallery}>
           {
             games.map((game, index) => (
-              <SwiperSlide customStyles={styles.swiper} key={index}>
-                <GameCard gameImage={game.img} gameUrl={game.url} key={index}/>
-              </SwiperSlide>
+              <GameCard gameImage={game.img} gameUrl={game.url} gameName={game.name} key={index}/>
             ))
           }
-        </Swiper>
       </div>
     </div>
   )

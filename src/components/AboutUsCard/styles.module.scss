@@ -2,37 +2,28 @@
 
 .card {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  background: linear-gradient(180deg, #282828 0%, #0C0C0C 100%);
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  max-width: 256px;
-  height: 295px;
+  width: 256px;
   padding: 32px 0;
 }
 
 .img {
   display: block;
-  max-height: 192px;
+  max-width: 100%;
 }
 
 .desc {
   font-size: 16px;
   text-align: center;
-  width: 90%;
+  max-width: 90%;
   color: white;
   margin: 32px auto auto auto;
 }
 
-.button {
-  background: #E7E7E7;
-  border-radius: 3px;
-  width: 90%;
-  height: 48px;
-  font-size: 20px;
-  color: $baaxal-black;
+@media (max-width: 1200px) {
+  .card {
+    margin: 12px auto;
+  }
 }
 
 @media (max-width: 912px) {
