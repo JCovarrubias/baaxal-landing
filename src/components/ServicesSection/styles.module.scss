@@ -1,0 +1,33 @@
+@import "../../sass/variables.scss";
+
+.background {
+  background-image: url('../../images/services_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 90%;
+  padding: 64px 0 64px 0;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 52px;
+  color: white;
+  margin-top: 0;
+  padding-bottom: 32px;
+}
+
+.highlight {
+  color: $baaxal-yellow;
+}
+
+.cardsContainer {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-evenly;
+  position: relative;
+  align-items: unset;
+  flex-wrap: wrap;
+}

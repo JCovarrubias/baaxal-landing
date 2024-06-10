@@ -2,9 +2,8 @@ import * as React from "react"
 import Container from "../components/container"
 import Content from "../components/Content"
 import Navbar from "../components/navbar"
-import VideoPlayer from "../components/VideoPlayer"
 import GamesSection from "../components/gamesSection"
-import AboutUsSection from "../components/AboutUsSection"
+import ServicesSection from "../components/ServicesSection"
 import ProcessSection from "../components/ProcessSection"
 import Footer from "../components/Footer"
 
@@ -14,9 +13,8 @@ const IndexPage = () => {
       <Container>
         <Content>
           <Navbar />
-          <VideoPlayer />
           <GamesSection />
-          <AboutUsSection />
+          <ServicesSection />
           <ProcessSection />
           <Footer />
         </Content>
