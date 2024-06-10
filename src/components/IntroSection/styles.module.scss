@@ -1,0 +1,70 @@
+@import "../../sass/variables.scss";
+
+.background {
+  background-image: url('../../images/orange_background.png');
+  background-repeat: no-repeat;
+  background-position: center top; /* Posiciona la imagen en la parte superior */
+  background-size: 100% 85%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 64px;
+}
+
+.leftContainer {
+  width: 37%;
+}
+
+.wellcomeLabel {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 382px;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.slogan {
+  color: white;
+  font-size: 120px;
+  padding-left: 100px;
+  margin: 0;
+}
+
+.rightContainer {
+  padding-right: 200px;
+}
+
+@media (max-width: 1200px) {
+  .background {
+    background-size: 100% 100%;
+  }
+
+  .leftContainer {
+    width: 100%;
+    padding-bottom: 32px;
+    margin-right: 5%;
+  }
+
+  .rightContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 912px) {
+  .wellcomeLabel {
+    width: 300px;
+  }
+
+  .slogan {
+    font-size: 48px;
+    padding-left: 10px;
+  }
+}
