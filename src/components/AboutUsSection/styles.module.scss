@@ -1,0 +1,64 @@
+@import "../../sass/variables.scss";
+
+.background {
+  background-image: url('../../images/orange_background.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 89%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 64px;
+  margin: auto;
+}
+
+.leftContainer {
+  width: 50%;
+}
+
+.title {
+  font-size: 52px;
+  color: white;
+  margin-top: 0;
+  padding-bottom: 32px;
+}
+
+.leftContainer p {
+  font-size: 22px;
+}
+
+.rightContainer img {
+  min-width: 50%;
+  max-width: 100%;
+}
+
+@media (max-width: 1670px) {
+  .background {
+    background-size: 100% 100%;
+  }
+
+  .container {
+    padding-bottom: 64px;
+  }
+
+  .leftContainer {
+    width: 80%;
+  }
+
+  .rightContainer {
+    align-content: center;
+  }
+}
+
+@media (max-width: 932px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftContainer {
+    width: 100%;
+  }
+}
