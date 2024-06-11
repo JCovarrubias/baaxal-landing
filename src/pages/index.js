@@ -7,6 +7,7 @@ import GamesSection from "../components/gamesSection"
 import ServicesSection from "../components/ServicesSection"
 import ProcessSection from "../components/ProcessSection"
 import AboutUsSection from '../components/AboutUsSection'
+import ContactSection from '../components/ContactSection'
 import Footer from "../components/Footer"
 
 const IndexPage = () => {
@@ -20,6 +21,7 @@ const IndexPage = () => {
           <ServicesSection />
           <ProcessSection />
           <AboutUsSection />
+          <ContactSection />
           <Footer />
         </Content>
       </Container>

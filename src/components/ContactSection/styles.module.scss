@@ -1,0 +1,85 @@
+@import "../../sass/variables.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 64px 0 64px 0;
+  margin: auto;
+}
+
+.title {
+  font-size: 52px;
+  color: $baaxal-yellow;
+  margin-top: 0;
+  padding-bottom: 32px;
+}
+
+.leftContainer {
+  max-width: 40%;
+}
+
+.leftContainer p {
+  color: white;
+  font-size: 24px;
+}
+
+.contactForm {
+  width: 50%;
+  align-content: center;
+}
+
+.formGroup {
+  width: 100%;
+  margin: 10px auto 10px auto;
+}
+
+.contactForm input, .contactForm textarea {
+  width: calc(100% - 5px);
+  border-radius: 20px;
+  border: 0px;
+  font-size: 18px;
+  background-color: #282828;
+  box-shadow: none;
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.contactForm input:focus, .contactForm textarea:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.formButton {
+  width: calc(100% - 5px);
+  border-radius: 20px;
+  border: 0px;
+  font-size: 18px;
+  background-color: $baaxal-yellow;
+  box-shadow: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.emailSuccess {
+  color: white;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftContainer {
+    max-width: 100%;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+}
