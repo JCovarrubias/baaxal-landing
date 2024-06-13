@@ -2,7 +2,7 @@
 
 .mobile_menu {
   display: flex;
-  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 10;
   top: 0;
@@ -18,7 +18,7 @@
   height: 35px;
   border: none;
   cursor: pointer;
-  background-color: $baaxal-black;
+  background-color: black;
   padding-top: 5px;
   padding-left: 10px;
 }
@@ -32,13 +32,17 @@
 }
 
 .menu_items {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  background-color: $baaxal-black;
-  padding: 10px;
-  list-style: none;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu_items li {
@@ -48,4 +52,11 @@
 .menu_items a {
   color: white;
   text-decoration: none;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
 }

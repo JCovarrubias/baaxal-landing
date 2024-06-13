@@ -7,8 +7,8 @@ import Team from '../../images/team.png'
 const AboutUsSection = () => {
   
   return (
-    <div className={styles.background}>
-      <div className={styles.container}>
+    <div id='about-us' className={styles.background}>
+      <div  className={styles.container}>
         <div className={styles.leftContainer}>
           <h1 className={styles.title}>NOSOTROS</h1>
           <p>

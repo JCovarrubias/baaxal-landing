@@ -4,19 +4,16 @@ import { Link } from "gatsby"
 
 const MobileMenu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [width, setWidth] = useState('50px');
 
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen)
-    isOpen ? setWidth('50px') : setWidth('100%')
   };
 
   const buttons = props.buttons
-  console.log(buttons)
+
   return (
     <div className={styles.mobile_menu}>
-      <button className={styles.menu_toggle} style={{ width }} onClick={handleMenuToggle}>
+      <button className={styles.menu_toggle} onClick={handleMenuToggle}>
         <span className={styles.bar}></span>
         <span className={styles.bar}></span>
         <span className={styles.bar}></span>
@@ -30,6 +27,7 @@ const MobileMenu = (props) => {
                         to={ data.linkTo }
                         key={index}
                         onClick={handleMenuToggle}
+                        className={styles.menuLink}
                     >
                         <p>{ data.name }</p>
                     </Link>

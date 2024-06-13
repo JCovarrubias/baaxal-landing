@@ -40,7 +40,7 @@ const ContactSection = () => {
   };
   
   return (
-    <div className={styles.container}>
+    <div id='contact-us' className={styles.container}>
       <div className={styles.leftContainer}>
         <h1 className={styles.title}>CONTÁCTANOS</h1>
         <p>

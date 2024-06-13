@@ -7,11 +7,12 @@ import Baaxy from '../../images/baaxy.png'
 const IntroSection = () => {
   
     return (
-      <div className={styles.background}>
+      <div id='home' className={styles.background}>
         <div className={styles.container}>
           <div className={styles.leftContainer}>
             <p className={styles.wellcomeLabel}>BIENVENIDO A BAAXAL GAMES</p>
-            <p className={styles.slogan}>PIENSA, CREA, JUEGA</p>
+            <p className={styles.slogan}>EXPERIENCIAS INTERACTIVAS A LA MEDIDA</p>
+            <p className={styles.subslogan}>Convertimos tu visión en juegos envolventes</p>
           </div>
           <div className={styles.rightContainer}>
             <img src={Baaxy}></img>

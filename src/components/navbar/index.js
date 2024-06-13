@@ -25,8 +25,9 @@ const Navbar = () => {
   }, []);
 
   const buttons = [
-    { name: 'HOME', linkTo: '/' },
-    { name: 'ABOUT US', linkTo: '/about-us' },
+    { name: 'INICIO', linkTo: '#home' },
+    { name: 'NOSOTROS', linkTo: '#about-us' },
+    { name: 'CONTACTO', linkTo: '#contact-us' },
   ]
 
   return (

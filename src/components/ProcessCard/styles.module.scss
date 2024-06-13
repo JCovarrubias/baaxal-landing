@@ -7,9 +7,16 @@
   padding: 32px 0;
 }
 
-.img {
-  display: block;
+.card img {
   max-width: 100%;
+}
+
+.fadeIn {
+  display: block;
+}
+
+.fadeOut {
+  display: none;
 }
 
 .desc {
@@ -21,9 +28,16 @@
   background-color: #dcdcdc;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-top: -35px;
-  padding: 20px;
+  margin-top: 0px;
   height: 250px;
+}
+
+.desc.expand {
+  display: block;
+}
+
+.desc.collapse {
+  display: none;
 }
 
 @media (max-width: 1200px) {
