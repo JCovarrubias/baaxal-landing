@@ -6,6 +6,12 @@ module.exports = {
     siteUrl: `https://www.baaxalgames.com/`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "./src/images/favicon.png"
+      }
+    },
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-google-fonts',

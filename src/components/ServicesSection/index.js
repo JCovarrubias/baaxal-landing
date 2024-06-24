@@ -6,7 +6,7 @@ import ServiceCard from "../ServiceCard"
 
 const ServicesSection = () => {
   const cards = [
-    { img: require("../../images/game_design.png").default, description: "CONSULTORIA DE DISÑO DE VIDEOJUEGOS (GAME DESIGN)" },
+    { img: require("../../images/game_design.png").default, description: "CONSULTORIA DE DISEÑO DE VIDEOJUEGOS (GAME DESIGN)" },
     { img: require("../../images/art_design.png").default, description: "DESARROLLO DE ARTE Y DISEÑO GRÁFICO" },
     { img: require("../../images/development.png").default, description: "DESARROLLO DE VIDEOJUEGOS" },
     { img: require("../../images/gamification.png").default, description: "GAMIFICACIÓN DE PLATAFORMAS" },
